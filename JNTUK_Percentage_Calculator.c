@@ -27,7 +27,9 @@ int calculateSubjectGPA(int subNumber){
             i++;
         else{
             while(1){
+                printf("\033[1;31m");
                 printf("\n!!!Warning!!!\nEnter only O, S, A, B, C, D, F\n");
+                printf("\033[0m");
                 printf("\nEnter Subject [%d] GPA : ",i);
                 scanf("%s",&subject[i]);
                 subject[i] = toupper(subject[i]);
@@ -78,7 +80,9 @@ int calculateLabGPA(int labNumber){
             i++;
         else{
             while(1){
+                printf("\033[1;31m");
                 printf("\n!!!Warning!!!\nEnter only O, S, A, B, C, D, F\n");
+                printf("\033[0m");
                 printf("\nSubject [%d] : ",i);
                 scanf("%s",&lab[i]);
                 lab[i] = toupper(lab[i]);
